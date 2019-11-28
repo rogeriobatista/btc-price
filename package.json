@@ -1,0 +1,22 @@
+{
+  "name": "btc-price",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogeriobatista/btc-price.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogeriobatista/btc-price/issues"
+  },
+  "homepage": "https://github.com/rogeriobatista/btc-price#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

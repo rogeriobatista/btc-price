@@ -1,0 +1,38 @@
+.coins {
+    width: 300px;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+.coins > .item {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.coins > .item > .code {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid #FF9900;
+    padding: 5px;
+}
+
+.coins > .item > .value {
+    display: block;
+    float: right;
+}
+
+.coins > .footer {
+    margin: 10px 0 0 0;
+    padding: 5px;
+}
+
+.coins > .footer > .logo {
+    width: 75px;
+}
+
+.coins > .footer #update-time {
+    float: right;
+    font-size: 12px;
+    margin-top: 3px;
+}
