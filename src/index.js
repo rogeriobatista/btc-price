@@ -1,13 +1,11 @@
+fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+    .then(response => response.json())
+    .then(data => {
+        var { USD, GBP, EUR } = data.bpi
 
-$.get('https://api.coindesk.com/v1/bpi/currentprice.json', function (response) {
+        document.querySelector('#usd').html = `<span class="code">${ USD.code }</span><span class="value">${ USD.symbol } ${ USD.rate }</span>`
+        document.querySelector('#gbp').html = `<span class="code">${ GBP.code }</span><span class="value">${ GBP.symbol } ${ GBP.rate }</span>`
+        document.querySelector('#eur').html = `<span class="code">${ EUR.code }</span><span class="value">${ EUR.symbol } ${ EUR.rate }</span>`
 
-    response = JSON.parse(response)
-
-    var values = response.bpi;
-
-    $('#usd').html(`<span class="code">${values.USD.code}</span><span class="value">${values.USD.symbol + values.USD.rate}</span>`);
-    $('#gbp').html(`<span class="code">${values.GBP.code}</span><span class="value">${values.GBP.symbol + values.GBP.rate}</span>`);
-    $('#eur').html(`<span class="code">${values.EUR.code}</span><span class="value">${values.EUR.symbol + values.EUR.rate}</span>`);
-
-    $('#update-time').text(response.time.updated);
-})
+        document.querySelector('#update-time').text = data.time.updated
+    })

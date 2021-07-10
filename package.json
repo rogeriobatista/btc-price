@@ -16,7 +16,5 @@
     "url": "https://github.com/rogeriobatista/btc-price/issues"
   },
   "homepage": "https://github.com/rogeriobatista/btc-price#readme",
-  "dependencies": {
-    "jquery": "^3.4.1"
-  }
+  "dependencies": {}
 }
